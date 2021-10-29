@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300&family=Poppins:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200;0,500;0,600;1,400&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300&family=Poppins:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&family=Raleway:ital,wght@0,200;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe86545aef.js" crossorigin="anonymous"></script>
+
+  </head>
+<body>
+   
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/newestlogo.gif" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#blogs">Blog</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#contacts">Contact Us</a></li>
+                    <li><a href=""><img src="images/menu.png" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mission" id="mission">
+        <div class="col-1">
+            <img src="images/Msite.png" alt="">
+        </div>
+        <div class="col-2">
+            <h1>Our Mission !</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque illum, dolorem maxime natus animi sint? Nisi delectus soluta aliquid magnam cum eos, reprehenderit alias magni!</p>
+            <button class="btn"><a href="">Get In Touch </a> <b>&#8594</b></button>
+        </div>
+    </div>
+    <div class="ToperHead">
+        <h1 id="team">Meet Our Team</h1>
+    </div>
+    <section class="sec-1" >
+        <figure class="snip1336">
+            <img src="images/profilebg1.jpg" alt="sample87" />
+            <figcaption>
+              <img src="images/boy1.jpg" class="profile" />
+              <h2>Mr. Don Pablo<span>Engineer</span></h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloribus expedita amet nihil mollitia quaerat.</p>
+              <a href="#" class="follow">Follow</a>
+              <a href="#" class="info">More Info</a>
+            </figcaption>
+          </figure>
+          <figure class="snip1336 hover">
+              <img src="images/profilebg2.jpg" alt="sample74" />
+            <figcaption>
+              <img src="images/girl1.jpg" class="profile" />
+              <h2>Mrs. Winset jolie<span>Photographer</span></h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis modi exercitationem dignissimos tempore non fugit!</p>
+              <a href="#" class="follow">Follow</a>
+              <a href="#" class="info">More Info</a>
+            </figcaption>
+          </figure>
+          <figure class="snip1336">
+              <img src="images/profilebg3.jpg" alt="sample69" />
+            <figcaption>
+              <img src="images/boy2.jpg" class="profile" />
+              <h2>Mr. Sniper Walter<span>Accountant</span></h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore explicabo minus nulla ut consequuntur! Omnis.</p>
+              <a href="#" class="follow">Follow</a>
+              <a href="#" class="info">More Info</a>
+            </figcaption>
+          </figure>
+          
+    </section >
+    <div class="ToperHead">
+        <h1 id="events">Upcoming Events</h1>
+    </div>
+
+    <section class="sec-2" >
+        <div class="backward">
+            <a href="javascript:prev()" onclick="prev()"> <img src="images/back.png" alt="" class="navbtn"></a>
+        </div>
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                
+
+                <div class="slide first">
+                    <img src="images/canvaedit.png" alt="1" class="bt">
+                    
+                </div>
+                <div class="slide">
+                    <img src="images/canvaedit2.png" alt="2" class="bt">
+                </div>
+                <div class="slide">
+                    <img src="images/canvaedit3.png" alt="3" class="bt">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+
+                    
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+
+            </div>
+
+        </div>
+        <div class="forward">
+           <a href="javascript:next()" onclick="next()"> <img src="images/next.png" alt="" class="navbtn"></a>
+        </div>
+
+
+
+        <script type="text/javascript">
+
+        var slider_img = document.querySelector('.bt');
+        var images = ['canvaedit.png','canvaedit2.png','convaedit3.png'];
+
+            var i = 0;
+
+            function prev(){
+                if(i<=0) i = images.length;
+                i--;
+                return setImg();
+    
+            }
+
+            function next(){
+                if(i >=images.length-1) i = -1;
+                i++;
+                return setImg();
+            }
+
+
+            function setImg(){
+                return slider_img.setAttribute('src','images/'+images[i]);
+                
+            }
+            </script>
+
+
+        <script type="text/javascript">
+
+        var counter =1;
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked = true;
+            counter++;
+            if(counter>3){
+                counter =1;
+            }
+        },5000);
+
+        </script>
+    </section>
+    
+    <div class="ToperHead">
+        <h1  id="blogs">Recent Blog Posts</h1>
+    </div>
+
+
+    <section class="sec-3">
+        <div class="card-wrapper">
+            <div class="card">
+              <div class="image-wrapper">
+                <a class="image-link" href="">
+        <img src='images/ebike2.jpg' alt=''>
+                <a/>
+              </div>
+              <div class="text-box-wrapper">
+              <div class="text-box">
+                <h1 class="heading">
+                  Review : Electric Bikes
+                </h1>
+        
+                <p  class="text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptas ipsum nihil modi porro sit voluptates dolorum eius quasi est.
+                </p>
+              </div>
+             </div>
+              
+              <div class="button-wrapper">
+                  <a class="button" href="">
+                    Read More
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="image-wrapper">
+                <a class="image-link" href="">
+        <img src='images/bsumit2.jpg' alt=''>
+                <a/>
+              </div>
+              <div class="text-box-wrapper">
+              <div class="text-box">
+                <h1 class="heading">
+                  Business Summit 2021
+                </h1>
+        
+                <p  class="text">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab itaque rerum ea non odio perferendis magnam tenetur illo excepturi voluptas.
+                </p>
+              </div>
+             </div>
+              
+              <div class="button-wrapper">
+                  <a class="button" href="">
+                    Read More
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="image-wrapper">
+                <a class="image-link" href="">
+        <img src='images/covidcarporate.jpg' alt=''>
+                <a/>
+              </div>
+              <div class="text-box-wrapper">
+              <div class="text-box">
+                <h1 class="heading">
+                  Carporate World After Covid
+                </h1>
+        
+                <p  class="text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, soluta cum blanditiis consectetur qui accusamus ut debitis repellat necessitatibus temporibus.
+                </p>
+              </div>
+             </div>
+              
+              <div class="button-wrapper">
+                  <a class="button" href="">
+                    Read More
+                  </a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <footer class="footer" id="contacts" >
+     
+      <div class="bottom">
+        <h5>GUIDELINES</h5>
+        <br>
+        <a href="">Disclaimer</a>
+        <a href="">Terms Of Use</a>
+        <a href="">Privacy Policy</a>
+        <br><br><br>
+        <a href="">&copy; 2021 Company Pvt. Ltd.</a>
+      </div>
+      <div class="bottom">
+        <h5>CONTACT US</h5>
+        <br>
+        <a href="">Media</a>
+        <a href="">Careers</a>
+        <a href="">Enquiry</a>
+      </div>
+      <div class="bottom">
+        <h5>SITEMAP</h5>
+        <br>
+        <a href="">Home</a>
+        <a href="">Mission</a>
+        <a href="">Team</a>
+        <a href="">Events</a>
+        <a href="">Blogs</a>
+      </div>
+      
+      <div class="bottmlast">
+        <h5>SUBSCRIBE</h5>
+        <br>
+        <input type="email" placeholder="Your E-mail">
+        <i class="fas fa-paper-plane"></i>
+
+        <br>
+        <!-- <img src="images/send.png" alt="" id="send"><br> -->
+        <!-- <button class="subcribe-btn">Subscribe</button> -->
+        <div class="socials">
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        
+
+        </div>
+        
+
+      </div>
+    </footer>
+
+   
+
+</body>
+</html>
