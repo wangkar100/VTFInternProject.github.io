@@ -90,6 +90,9 @@ nav{
     margin-top: 80px;
     
 }
+.mission h1:hover{
+    color: grey;
+}
 
 .mission p{
     margin: 45px 40px 0px 40px;
@@ -151,6 +154,11 @@ nav{
     
 
 }
+
+.ToperHead h1:hover{
+    color: grey;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 
