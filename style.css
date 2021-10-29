@@ -602,3 +602,11 @@ footer .bottom a{
     color:black;
     font-weight: 600;
 } */
+
+
+
+@media screen and (max-width:1400px){
+    body{
+        display: none;
+    }
+}
