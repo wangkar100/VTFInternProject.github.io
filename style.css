@@ -594,6 +594,13 @@ footer .bottom a{
     margin: 10px;
 }
 
+
+@media screen and (max-width:1400px){
+    body{
+        display: none;
+    }
+}
+
 /* .subcribe-btn{
     background: rgb(0, 140, 255);
     border-radius: 5px;
